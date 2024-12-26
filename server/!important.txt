@@ -1,0 +1,8 @@
+my default.json in the config folder goes as follows:
+{
+  "PORT": "YOUR_PORT_NUMBER",
+  "DB_URL": "YOUR_MONGODB_URL/DATABASE",
+  "SECRET_KEY": ""
+}
+
+make sure to add this
