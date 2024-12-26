@@ -4,6 +4,7 @@ import "./utils/dbconnect.js";
 import userRouter from "./controllers/users/index.js";
 import adminRouter from "./controllers/admins/index.js";
 import videoRouter from "./controllers/videos/index.js";
+import trailerRouter from "./controllers/trailers/index.js";
 import publicRouter from "./public/index.js";
 
 const app = express();
@@ -22,6 +23,7 @@ app.use("/api/public", publicRouter);
 app.use("/api/users", userRouter);
 app.use("/api/admins", adminRouter);
 app.use("/api/videos", videoRouter);
+app.use("/api/trailers", trailerRouter);
 
 app.listen(PORT, () => {
   console.log(`Server is running at ${PORT}`);
