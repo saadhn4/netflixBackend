@@ -5,7 +5,7 @@ import userRouter from "./controllers/users/index.js";
 import adminRouter from "./controllers/admins/index.js";
 import videoRouter from "./controllers/videos/index.js";
 import trailerRouter from "./controllers/trailers/index.js";
-import publicRouter from "./public/index.js";
+import publicRouter from "./controllers/public/index.js";
 
 const app = express();
 app.use(express.json());
